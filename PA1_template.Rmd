@@ -2,10 +2,10 @@
 title: "Reproducible Research: Peer Assessment 1"
 author: "Ashutosh Palla"
 output:
-    md_document:
-        variant: markdown_github 
+    html_document:
+        keep_md: true 
 date: "February 22, 2019"
-keep_md: true
+
 ---
 
 ## Loading and preprocessing the data
