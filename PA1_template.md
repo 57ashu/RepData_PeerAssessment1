@@ -89,7 +89,7 @@ hist(StepsPerDay, xlab = "Number of Steps", main = "Histogram: Steps per Day")
 MeanPerDay <- mean(StepsPerDay, na.rm = TRUE)
 MedianPerDay <- median(StepsPerDay, na.rm = TRUE)
 ```
-The mean is `MeanPerDay` and the median is `MedianPerDay`.
+The `mean` is 1.0766189\times 10^{4} and the `median` is 10765.
 ## What is the average daily activity pattern?
 
 ```r
@@ -109,7 +109,7 @@ plot(as.numeric(names(StepsPerInterval)),
 maxInterval <- names(sort(StepsPerInterval, decreasing = TRUE)[1])
 maxSteps <- sort(StepsPerInterval, decreasing = TRUE)[1]
 ```
-The 5-minute interval, on average across all the days in the data set, containing the maximum number of steps is `maxInterval`.
+The `5-minute interval`, on average across all the days in the data set, containing the maximum number of steps is 835.
 ## Imputing missing values
 
 ```r
@@ -145,7 +145,7 @@ hist(StepsPerDay.imputed, xlab = "Number of Steps", main = "Histogram: Steps per
 MeanPerDay.imputed <- mean(StepsPerDay.imputed, na.rm = TRUE)
 MedianPerDay.imputed <- median(StepsPerDay.imputed, na.rm = TRUE)
 ```
-The mean and median number of steps per day including imputed data are `MeanPerDay.imputed` and `MedianPerDay.imputed`, respectively. The mean remains the same as prior to imputation, while the median value increased slightly.
+The mean and median number of steps per day including imputed data are 1.0766189\times 10^{4} and 1.0766189\times 10^{4}, respectively. The mean remains the same as prior to imputation, while the median value increased slightly.
 ## Are there differences in activity patterns between weekdays and weekends?
 
 ```r
